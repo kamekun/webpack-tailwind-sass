@@ -1,0 +1,35 @@
+{
+  "name": "tailwind-webpack-demo",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "Just a demno for test tailwind",
+  "scripts": {
+    "prod": "webpack --mode=production --config webpack.config.js",
+    "dev": "webpack --mode=development --progress --config webpack.config.js",
+    "watch": "webpack --mode=development --watch --progress --config webpack.config.js"
+  },
+  "dependencies": {
+    "autoprefix": "^1.0.1",
+    "autoprefixer": "^10.3.3",
+    "node-sass": "^6.0.1",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.2",
+    "postcss-minify": "^1.1.0",
+    "postcss-variables": "^1.1.1",
+    "sass": "^1.38.1",
+    "sass-loader": "^12.1.0",
+    "tailwindcss": "^2.2.7"
+  },
+  "devDependencies": {
+    "css-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.2.0",
+    "postcss": "^8.3.6",
+    "postcss-loader": "^6.1.1",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
+  }
+}

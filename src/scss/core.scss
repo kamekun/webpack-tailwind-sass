@@ -1,0 +1,70 @@
+/* Import's */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Components */
+@import "./components/_colors.scss";
+
+/* Variables */
+$colorGreen: #8ac441;
+$colorBlue: #1f355b;
+$colorWhite: #ffffff;
+$colorPink: #ff45ad;
+$colorOrange: #e54c21;
+
+/* HTML's */
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* html*/
+body {
+    width: 100%;
+    min-height: 100%;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    @apply flex justify-center content-center flex-wrap flex-col;
+}
+
+/* body */
+body {
+
+    img {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+    }
+
+    // container
+    .container-test {
+        width: 500px;
+        height: 150px;
+        font-size: 18px;
+        margin-top: 10px;
+        padding-top: 30px;
+        text-align: center;
+        color: $colorWhite;
+        border-radius: 15px;
+        border: 1px solid $colorBlue;
+
+        span {
+            width: 100%;
+        }
+
+        a:link {
+            color: $colorBlue;
+            padding: 15px 25px;
+            border-radius: 15px;
+            display: inline-block;
+            text-decoration: none;
+            background-color: $colorOrange;
+        }
+
+        a:hover,
+        a:active {
+            color: $colorWhite;
+        }
+    }
+}
